@@ -18,7 +18,7 @@ const getCountries = async (e) => {
     
     const countryCard = document.createElement("a");
     countryCard.classList.add("card");
-
+    countryCard.href = `/country.html?name=${country.name.common}`;
     const cardHTML = `
     <img src=${country.flags.svg} alt="flag">
     <div class="card-text">
@@ -32,7 +32,7 @@ const getCountries = async (e) => {
     countryCard.innerHTML = cardHTML;
     countries.append(countryCard);
   });
-  console.log(data);
+  //console.log(data);
   //   console.log(data[0].flags.svg);
   //   console.log(data[0].name.common);
   //   console.log(data[0].continents[0]);

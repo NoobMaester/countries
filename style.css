@@ -96,9 +96,12 @@ body {
     box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
     text-decoration: none;
+    border: 1px solid #fff;
+    color: rgba(0, 0, 0, 0.7);
 }
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
+    cursor: pointer;
 }
 .card-title{
     font-size: 24px;
@@ -107,6 +110,67 @@ body {
 .card-text{
     padding-inline: 16px;
 }
+.card-text p{
+    margin: 1rem 0;
+}
 .card img{
     width: 100%;
+}
+
+/* MEDIA Q */
+
+@media (max-width: 800px){
+    .countries{
+        justify-content: center;
+    }
+}
+
+
+/* country styles */
+.back{
+  padding: 1rem 2rem;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.details{
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.details img{
+  width: 500px;
+}
+.detailss{
+  padding: 1rem 0;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.detailss p{
+  margin: 1rem 0;
+}
+.borders{
+  margin-top: 48px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.borders a{
+  padding: 1rem 2rem;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-inline: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 800px){
+  .details{
+    flex-direction: column;
+  }
+  .detailss{
+    flex-direction: column;
+  }
 }
