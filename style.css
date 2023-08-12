@@ -24,7 +24,7 @@ body {
 }
 .dark-mode {
   background-color: black;
-  color: #f4f4f4;
+  color: #fff;
 }
 
 .mode p {
@@ -97,7 +97,6 @@ body {
     transition: transform 0.2s;
     text-decoration: none;
     border: 1px solid #fff;
-    color: rgba(0, 0, 0, 0.7);
 }
 .card:hover{
     transform: scale(1.05);
